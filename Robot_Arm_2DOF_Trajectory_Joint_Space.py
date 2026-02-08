@@ -3,7 +3,7 @@ from Robot_Arm_2DOF_FK import fk_2dof
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-# Function to compute joint angles at a single step
+# Compute joint angles at a single step
 
 def joint_step(start_thetas, target_thetas, i, steps, mode):
 
@@ -100,3 +100,4 @@ animate_2dof(traj, lengths)
 
 
     
+
