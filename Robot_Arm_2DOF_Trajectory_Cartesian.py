@@ -3,7 +3,8 @@ from Robot_Arm_2DOF_FK import fk_2dof
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-# Single-step interpolation in Cartesian space
+# Compute joint angles at a single step
+
 def cartesian_step(start_xy, target_xy, i, steps, lengths, mode):
 
     # Progress along trajectory (0=start, 1=end)
@@ -91,5 +92,6 @@ target = [1.2, 0.5]
 lengths = [1.0, 0.8]
 steps = 60
 traj = trajectory_cartesian(start_thetas, target, lengths, steps, mode="cubic")
+
 
 animate_2dof(traj, lengths)
